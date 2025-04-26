@@ -13,15 +13,11 @@ from transformers import BartForConditionalGeneration, TrainingArguments, Traine
 
 df = pd.read_csv("filtered_mediasum.csv")  # Loading Mediasum dataset
 
-# Quick preview
-print("Loaded rows:", len(df))
-print(df.columns)
-
 
 
 # Applying Text Cleaning
-df["document"] = df["document"].astype(str).apply(clean_text)
-df["summary"] = df["summary"].astype(str).apply(clean_text)
+df["document"] = df["document"].astype(str)
+df["summary"] = df["summary"].astype(str)
 
 
 # Randomly sampling 10000 rows from the dataset
