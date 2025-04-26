@@ -12,7 +12,7 @@ import time
 # Function to summarize a document using GPT-4
 def summarize_document(document):
     # API URL for the GPT-4.1 model completion
-    token = "<put your token here>"  # Your API token
+    token = "<Add your token here>"  # Your API token
     endpoint = "https://models.github.ai/inference"  # The endpoint for the API
     model = "openai/gpt-4.1"  # The model name
     api_url = f"{endpoint}/chat/completions"
